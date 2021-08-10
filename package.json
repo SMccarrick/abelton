@@ -1,12 +1,30 @@
 {
-  "name": "@example/starter",
+  "name": "abelton",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "scripts": {
     "start": "astro dev",
-    "build": "astro build"
+    "build": "astro build",
+    "test": "xo",
+    "test:fix": "xo --fix"
   },
   "devDependencies": {
-    "astro": "^0.18.9"
+    "astro": "^0.18.9",
+    "tailwindcss": "^2.2.7",
+    "typescript": "^4.3.5",
+    "xo": "^0.44.0"
+  },
+  "main": "index.js",
+  "repository": "git@github.com:SMccarrick/abelton.git",
+  "author": "SMccarrick <smccarrick2804@gmail.com>",
+  "license": "MIT",
+  "xo": {
+    "space": 4
+  },
+  "dependencies": {
+    "@astrojs/renderer-react": "^0.2.0"
+  },
+  "snowpack": {
+    "workspaceRoot": "../.."
   }
 }
